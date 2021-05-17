@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private Button truBtn ;
     private Button falseBtn;
+    private TextView displayTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,12 +18,17 @@ public class MainActivity extends AppCompatActivity {
 
         truBtn = findViewById(R.id.true_button);
         falseBtn = findViewById(R.id.false_button);
-
+        displayTextView = findViewById(R.id.displayText);
         truBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView textView = (TextView)findViewById(R.id.displayText);
-                textView.setText("True");
+                displayTextView.setText("Bad answer!");
+            }
+        });
+        falseBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                displayTextView.setText("Correct !");
             }
         });
 

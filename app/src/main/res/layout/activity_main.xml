@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:padding="24dp"
+        android:textSize="18sp"
         android:text="@string/question_text"
         android:id="@+id/displayText"/>
     <LinearLayout
@@ -29,6 +30,7 @@
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="@string/false_button" />
     </LinearLayout>
 
