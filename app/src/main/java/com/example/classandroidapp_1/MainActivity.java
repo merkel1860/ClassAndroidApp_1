@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         truBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                displayTextView.setText("Bad answer!");
+                displayTextView.setText("Wrong answer!");
             }
         });
         falseBtn.setOnClickListener(new View.OnClickListener() {
